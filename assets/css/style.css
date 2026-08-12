@@ -249,6 +249,37 @@ section { margin-bottom: 42px; }
 .contact-list li { margin-bottom: 8px; }
 .contact-list i { color: var(--accent); width: 20px; margin-right: 8px; }
 
+/* WeChat QR hover */
+.wechat { position: relative; display: inline-block; }
+.wechat-id {
+  color: var(--accent);
+  cursor: pointer;
+  border-bottom: 1px dashed var(--accent);
+}
+.wechat-qr {
+  position: absolute;
+  left: 0;
+  bottom: 130%;
+  z-index: 10;
+  display: block;
+  width: 180px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+}
+.wechat-qr img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.wechat:hover .wechat-qr {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 footer {
   margin-top: 40px;
   padding-top: 20px;
