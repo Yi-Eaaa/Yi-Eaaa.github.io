@@ -173,6 +173,8 @@ section { margin-bottom: 42px; }
 .entry-body li { margin-bottom: 6px; font-size: .93rem; }
 .entry-date {
   flex-shrink: 0;
+  width: 120px;
+  text-align: left;
   font-size: .85rem;
   color: var(--text-light);
   font-weight: 700;
