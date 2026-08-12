@@ -83,6 +83,9 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   transition: all .2s ease;
 }
 .social a:hover { background: var(--accent); color: #fff; border-color: var(--accent); text-decoration: none; transform: translateY(-2px); }
+.social a.social-img { padding: 0; overflow: hidden; }
+.social a.social-img:hover { background: #fff; border-color: var(--accent); }
+.social a.social-img img { width: 24px; height: 24px; border-radius: 6px; display: block; }
 
 .cv-btn {
   display: inline-block;
